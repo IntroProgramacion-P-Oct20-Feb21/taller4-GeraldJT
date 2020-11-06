@@ -5,6 +5,9 @@
  */
 package ejercicioscuatro;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -15,7 +18,22 @@ public class Ejercicio1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+      // TODO code application logic here
+      Scanner entrada= new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+       //Variables
+        Double base;
+        Double altura;
+        Double area;
+        //Proceso
+        System.out.println("Ingrese la base del triangulo");
+        base= entrada.nextDouble();
+        System.out.println("Ingrese la altura del triangulo");
+        altura= entrada.nextDouble();
+        // Salida
+        area= (base*altura)/2;
+        System.out.println("El area del triangulo es:\n"+area);
+
     }
     
 }
